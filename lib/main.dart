@@ -36,18 +36,18 @@ class _HomePageState extends State<HomePage> {
   buttonPressed(String buttonText){
     setState(() {
       if(buttonText == "C"){
-        // equation = "0";
-        // result = "0";
+        equation = "0";
+        result = "0";
         // equationFontSize = 38.0;
         // resultFontSize = 48.0;
       }
       else if(buttonText == "⌫"){
         // equationFontSize = 48.0;
         // resultFontSize = 38.0;
-        // equation = equation.substring(0, equation.length - 1);
-        // if(equation == ""){
-        //   equation = "0";
-        }
+         equation = equation.substring(0, equation.length - 1);
+        if(equation == ""){
+          equation = "0";}
+         }
 
       else if(buttonText=="="){
         // equationFontSize=48.0;
